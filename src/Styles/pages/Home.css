@@ -1,0 +1,8 @@
+.welcome{
+    padding : 58px;
+    text-align: center;
+}
+
+.welcome h1, .welcome h2 {
+    margin: 0;
+}

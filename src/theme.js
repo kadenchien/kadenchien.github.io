@@ -1,8 +1,11 @@
+import { funk } from "@theme-ui/presets";
+
 const theme = {
-    fonts: {
-        body: 'Roboto',
-        heading: 'Raleway',
+    ...funk,
+    styles: {
+        ...funk.styles,
     },
+    
     
 };
 export default theme;
