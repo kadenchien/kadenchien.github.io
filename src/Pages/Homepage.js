@@ -10,7 +10,8 @@ import{
 function Home(){
     return(
      <>
-        <Grid gap={2} columns={[2, '1.5fr 2fr']}>
+     <div className = "intro--section">
+<Grid gap={2} columns={[2, '1.5fr 2fr']}>
         <Box>
           <div className="intro--grid">
                 <div className = "intro--content">
@@ -19,7 +20,6 @@ function Home(){
                         A freshman at Duke <br/> studying CS and Math
                     </h2>
                     <p className = "intro--description">
-                        Sample text here
                     </p>
                   <a href="mailto:kaden.chien@duke.edu">
                     <button className="button-contact">Contact Me!</button>
@@ -33,6 +33,8 @@ function Home(){
           </Box>
         </div>
         </Grid>
+     </div>
+        
      </>
     )
 }

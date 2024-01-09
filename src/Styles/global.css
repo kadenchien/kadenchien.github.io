@@ -2,6 +2,8 @@
 
 .navbarTop{
     height:100px;
+    background-color: rgb(250, 240, 255);
+    box-shadow: 0 8px 16px -4px rgba(0,0,0,.2);
 }
 
 .intro--title{
@@ -18,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 80px 120px 80px;
+    padding: 15% 15% 10% 25%;
 }
 
 .intro--grid{
@@ -28,7 +30,7 @@
 }
 
 .intro--photo{
-    padding: 80px 50px 80px;
+    padding: 10% 20% 10%;
     vertical-align:middle;
 }
 
@@ -40,9 +42,9 @@
     display: grid;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 4%;
     grid-template-columns: repeat(3, 1fr); 
-    padding: 40px 120px 40px;
+    padding: 1% 8% 1%;
 }
 
 .button-contact {
@@ -88,3 +90,82 @@
     box-shadow: none;
     transform: translateY(0);
   }
+
+.button-projects {
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-projects:focus {
+  color: #171e29;
+}
+
+.button-projects:hover {
+  border-color: #609;
+  color: #609;
+  fill: #609;
+  background-color: rgb(250, 240, 255);
+}
+
+
+.button-projects:active {
+  border-color: #609;
+  color: #609;
+  fill: #609;
+}
+
+.button-projects-progress {
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid rgb(138, 138, 138);
+    box-sizing: border-box;
+    color: rgb(138, 138, 138);
+    cursor: pointer;
+    display: inline-flex;
+    fill: rgb(138, 138, 138);
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    background-color: rgb(236, 236, 236);
+  }
+
+.button-projects-progress:hover{
+    border-color: rgb(138, 138, 138);
+    color: rgb(138, 138, 138);
+    fill: rgb(138, 138, 138);
+}
