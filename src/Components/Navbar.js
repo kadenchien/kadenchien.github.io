@@ -6,6 +6,7 @@ import {
     Box,
     Grid,
     IconButton,
+    Image,
     NavLink,
     Flex,
     Button
@@ -13,8 +14,11 @@ import {
 function Navbar(){
 return (
   <div className="navbarTop">
-      <Grid gap={2} columns={[3, '1fr 2fr 1fr']}>
-      <Box align="center"><h1>Porfolio</h1></Box>
+      <Grid gap={2} columns={[3, '0.5fr 0.5fr 2fr 1fr']}>
+      <Image src = './img/photo.jpeg' sx={{pl: '20px', borderTopLeftRadius: '3', borderTopRightRadius: '3',  width: '50px', height: 'auto' }} />
+      <Box align="center" sx={{pt: '8px'}}>
+        <h2>Kaden Chien</h2>
+      </Box>
       <Box>
       </Box>
       <Flex as="nav">

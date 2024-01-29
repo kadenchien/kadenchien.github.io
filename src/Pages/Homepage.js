@@ -4,6 +4,8 @@ import styles from '../Styles/pages/Home.css';
 import{
     Box,
     Button,
+    Heading,
+    Link,
     Grid
   } from 'theme-ui';
 
@@ -11,28 +13,19 @@ function Home(){
     return(
      <>
      <div className = "intro--section">
-<Grid gap={2} columns={[2, '1.5fr 2fr']}>
-        <Box>
-          <div className="intro--grid">
-                <div className = "intro--content">
-                    <h1 className="intro--title">Hey, I'm Kaden!</h1>
-                    <h2 className = "intro--heading">
-                        A freshman at Duke <br/> studying CS and Math
-                    </h2>
-                    <p className = "intro--description">
-                    </p>
-                  <a href="mailto:kaden.chien@duke.edu">
-                    <button className="button-contact">Contact Me!</button>
-                  </a>
-                </div>
-           </div>
-        </Box>
-        <div className="intro--photo">
-          <Box align = "center">
-          <img src="./img/photo.jpeg" />
-          </Box>
+        <Box sx={{alignItems: 'center', textAlign: 'center', justifyContent: 'center', flexDirection: 'column', flexDirection: 'column', height: '100vh', display: 'flex'}}>
+        <div className = "intro--heading">
+          <Heading as="h1" variant="h1" mb={4} color="black" sx={{fontSize: '70px'}}>
+            Hey, I'm Kaden
+          </Heading>
         </div>
-        </Grid>
+        <div className = "intro--content">
+          <p>
+            A freshman at Duke studying CS and Math who is passionate about <br />web development and data science
+          </p>
+        </div>
+        <button className="button-intro">Projects</button>
+        </Box>
      </div>
         
      </>
