@@ -1,14 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');   
 
+.container{
+  background-color: rgb(246, 244, 244)
+}
+
 .navbarTop{
-    height:100px;
-    background-color: rgb(250, 240, 255);
+    height:90px;
+    width: 100%;
+    background-color: rgb(238, 238, 238);
     box-shadow: 0 8px 16px -4px rgba(0,0,0,.2);
+    position:absolute;
+}
+
+.intro--section{
+  background-image: url(./18410.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .intro--content{
   font-size: 30px;
   font-weight: 400;
+}
+
+.about--title{
+  padding-top: 80px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.about--info{
+  text-align: left;
+  padding-left: 100px;
+}
+
+.about--main{
+  background-color: rgb(246, 244, 244);
 }
 
 .projects--title{

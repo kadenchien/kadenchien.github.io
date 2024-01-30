@@ -13,9 +13,9 @@ function Home(){
     return(
      <>
      <div className = "intro--section">
-        <Box sx={{alignItems: 'center', textAlign: 'center', justifyContent: 'center', flexDirection: 'column', flexDirection: 'column', height: '100vh', display: 'flex'}}>
+        <Box sx={{alignItems: 'center', textAlign: 'center', justifyContent: 'middle', flexDirection: 'column', flexDirection: 'column', height: '100vh', display: 'flex', pt: '18%'}}>
         <div className = "intro--heading">
-          <Heading as="h1" variant="h1" mb={4} color="black" sx={{fontSize: '70px'}}>
+          <Heading as="h1" variant="h1" color="black" sx={{fontSize: '70px'}}>
             Hey, I'm Kaden
           </Heading>
         </div>

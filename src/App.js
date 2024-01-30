@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar';
 import Projects from "./Pages/Projects";
 import Skills from "./Pages/Skills";
 import AboutMe from "./Pages/AboutMe"
+import Sidebar from './Components/Sidebar';
 
 const App = () => {
   return (
@@ -17,10 +18,13 @@ const App = () => {
         <div className = "navbar">
           <Navbar />
         </div>
+        <div className = "sidebar">
+          <Sidebar />
+        </div>
         <div className = "content">
           <Home />
-          <Skills />
           <AboutMe />
+          <Skills />
           <Projects />
         </div>
       </ThemeUIProvider> 
