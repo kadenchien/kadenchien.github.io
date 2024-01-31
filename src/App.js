@@ -6,7 +6,6 @@ import { ThemeUIProvider, Divider } from "theme-ui";
 import Home from "./Pages/Homepage";
 import Navbar from './Components/Navbar';
 import Projects from "./Pages/Projects";
-import Skills from "./Pages/Skills";
 import AboutMe from "./Pages/AboutMe"
 import Sidebar from './Components/Sidebar';
 
@@ -24,7 +23,6 @@ const App = () => {
         <div className = "content">
           <Home />
           <AboutMe />
-          <Skills />
           <Projects />
         </div>
       </ThemeUIProvider> 

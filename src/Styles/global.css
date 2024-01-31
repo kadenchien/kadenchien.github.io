@@ -16,6 +16,7 @@
   background-image: url(./18410.jpg);
   background-size: cover;
   background-position: center;
+  padding-bottom: 50px;
 }
 
 .intro--content{
@@ -32,45 +33,27 @@
 
 .about--info{
   text-align: left;
-  padding-left: 100px;
-}
-
-.about--main{
-  background-color: rgb(246, 244, 244);
+  padding-left: 130px;
+  font-size: 17px;
 }
 
 .projects--title{
     text-align: center;
 }
 
-.project--container{
-    display: grid;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 4%;
-    grid-template-columns: repeat(3, 1fr); 
-    padding: 1% 8% 1%;
+.projects--header{
+  color: gray;
+  padding-top: 10px;
+  font-size: 20px;
 }
 
-.skills--title{
-  text-align: center;
-}
-
-.skills--container{
-  display: grid;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2%;
-  grid-template-columns: repeat(4, 1fr); 
-  padding: 1% 8% 1%;
-}
 
 .button-intro {
     appearance: none;
     background-color: --primary;
     border: 2px solid #1A1A1A;
     border-radius: 15px;
-    width: 13%;
+    width: auto;
     color: #3B3B3B;
     cursor: pointer;
     display: inline-block;
@@ -82,7 +65,7 @@
     min-height: 60px;
     min-width: 0;
     outline: none;
-    padding: 16px 24px;
+    padding: 16px 40px;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -126,13 +109,13 @@
   line-height: 24px;
   min-width: 140px;
   outline: 0;
-  padding: 0 17px;
   text-align: center;
   text-decoration: none;
   transition: all .3s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  border-radius: 5px;
 }
 
 .button-projects:focus {
