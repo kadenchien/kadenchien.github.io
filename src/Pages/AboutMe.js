@@ -23,12 +23,13 @@ function AboutMe(){
                 </Flex>
             </div>
             <div className = "about--grid">
-            <Grid columns={[1, null, 2]} gap={6} sx={{pt: '100px', pb: '100px'}}>
+            <Grid columns={[1, null, 2]} gap={5} sx={{pt: '100px', pb: '100px'}}>
                 <Box>
                 <div className = "about--info">
                     <Heading sx={{fontSize: '30px'}}>Get To Know Me!</Heading>
-                    <p>I'm a freshman at Duke studying CS and Math. I hope to pursue a career in tech, so I'm working on a couple of projects right now such as website mockups and some functional full stack web apps (some super cool stuff coming soon).</p> 
-                    <p>My hometown is Potomac, MD, but I'm originally from Boston, so I love watching the Celtics and Patriots. I also love listening to music, and some of my favorite musical artists are Tyler, the Creator, wave to earth, and Giveon.</p>  
+                    <p>I was born in Boston them moved to Potomac, Maryland when I was 7. From there I moved down to Durham, NC, where I'm now a freshman at Duke studying Math and CS.</p>
+                    <p>As an aspiring developer, I'm working on a couple of projects right now such as website mockups and some functional full stack web apps (some super cool stuff coming soon).</p>
+                    <p>I'm a huge fan of Boston Sports, especially the Celtics, and love listening to music. My favorite artists include Tyler, The Creater and wave to earth. I also really enjoy following fashion, and my favorite brand to follow is Maison Margiela.</p> 
                     <p>I'm super excited to learn and grow, and am open to any opportunities where I can develop my skills. Feel free to connect with me on LinkedIn, or contact me!</p>  
                     <br />
                     <button className="button-intro">Contact</button>

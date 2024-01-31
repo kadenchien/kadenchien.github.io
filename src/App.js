@@ -27,8 +27,6 @@ const App = () => {
         </div>
       </ThemeUIProvider> 
     </div> 
-    
-      
     </>
   );
 }

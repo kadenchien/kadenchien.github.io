@@ -14,11 +14,13 @@ import {
 function Navbar(){
 return (
   <div className="navbarTop">
-      <Grid gap={2} columns={[4, '0.5fr 0.5fr 2fr 1fr']}>
-      <Image src = './img/photo.jpeg' sx={{ borderTopLeftRadius: '3', borderTopRightRadius: '3',  width: '50px', height: 'auto' }} />
-      <Box align="center" sx={{pt: '3px'}}>
+      <Grid gap={2} columns={[4, '1fr 2fr 1fr']}>
+      <Flex sx={{flexDirection: 'row', alignItems: 'center', pl: '80px'}}>
+      <Image src = './img/photo.jpeg' sx={{ width: '50px', height: 'fit-content'}} />
+      <Box align="center" sx={{pt: '3px', pl: '20px'}}>
         <h2>Kaden Chien</h2>
       </Box>
+      </Flex>
       <Box>
       </Box>
       <Flex as="nav">

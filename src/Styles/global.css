@@ -23,7 +23,6 @@
   font-size: 30px;
   font-weight: 400;
 }
-
 .about--title{
   padding-top: 80px;
   font-size: 20px;
@@ -37,12 +36,16 @@
   font-size: 17px;
 }
 
+.about--skills{
+  padding-left: 70px;
+}
+
 .projects--title{
     text-align: center;
 }
 
 .projects--header{
-  color: gray;
+  color: rgb(92, 91, 91);
   padding-top: 10px;
   font-size: 20px;
 }

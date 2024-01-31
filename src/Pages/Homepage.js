@@ -15,6 +15,7 @@ function Home(){
      <div className = "intro--section">
         <Box sx={{alignItems: 'center', textAlign: 'center', justifyContent: 'middle', flexDirection: 'column', flexDirection: 'column', height: '100vh', display: 'flex', pt: '18%'}}>
         <div className = "intro--heading">
+        <script defer src="script.js"></script>
           <Heading as="h1" variant="h1" color="black" sx={{fontSize: '70px'}}>
             Hey, I'm Kaden
           </Heading>
