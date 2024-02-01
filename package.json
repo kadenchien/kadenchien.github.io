@@ -1,5 +1,5 @@
 {
-  "name": "personal-website",
+  "name": "portfolio-website",
   "version": "0.1.0",
   "homepage": "https://kadenchien.github.io",
   "private": true,
@@ -45,7 +45,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0",
+    "gh-pages": "^6.1.1",
     "react-router-dom": "^6.21.1"
   }
 }

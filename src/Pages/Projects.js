@@ -10,7 +10,7 @@ import {
     Link
 } from 'theme-ui';
 
-const Project = ({title, description, imageUrl, link, skills}) => (
+const Project = ({title, description, imageUrl, link, skills, button}) => (
 <Box p={4} mb={4} borderRadius="8px">
 <Flex sx={{ flexDirection: ['column', 'row'], alignItems: 'center' }}>
   <Box mb={[3, 0]} mr={[0, 4]} sx={{ flex: '0 0 auto' }}>
@@ -31,7 +31,7 @@ const Project = ({title, description, imageUrl, link, skills}) => (
       }
     </Flex>
     <Box sx={{pt: '20px'}}>
-    <button className="button-projects">View in GitHub</button>
+    <a href={link} target="_blank"><button className="button-projects">{button}</button></a>
     </Box>
   </Box>
 </Flex>
@@ -45,27 +45,32 @@ function projects() {
             description: 'I made a few python scripts to automate some everyday tasks including file cleaning!',
             imageUrl: './img/automation.png',
             link: 'https://github.com/kadenchien/FileCleaner',
-            skills: ['Python']
+            skills: ['Python'],
+            button: 'View in GitHub'
         },
         {
             title: 'Nike Product Web Mockup',
             description: 'I made a website mockup for a Nike product using HTML and CSS!',
             imageUrl: './img/nike.png',
             link: 'https://github.com/kadenchien/FileCleaner',
-            skills: ['HTML', 'CSS', 'JavaScript']
+            skills: ['HTML', 'CSS', 'JavaScript'],
+            button: 'View in GitHub'
         },
         {
           title: 'Sports Betting Odds Finder',
           description: "I'm currently working on a project that scrapes sports betting odds from various websites such as PrizePicks and FanDuel, then compares it among sites to look for discrepancies for potential positive EV bets.",
           imageUrl: './img/betting.png',
           link: 'https://github.com/kadenchien/FileCleaner',
-          skills: ['HTML', 'CSS', 'Next', 'JavaScript', 'SQL', 'Python']
+          skills: ['HTML', 'CSS', 'Next', 'JavaScript', 'SQL', 'Python'],
+          button: 'Coming Soon'
       },
     ]
     return (
     <div className = "projects">
-        <Flex sx={{flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pb: '20px'}}>
+        <Flex sx={{flexDirection: 'column', alignItems: 'center', justifyContent: 'center', pb: '20px', pt: '70px'}}>
+            <div className = "projects--title">
             <h1>Projects</h1>
+            </div>
             <Box sx={{width: '40px', height: '5px', bg: "primary", my: -10, borderRadius: '50px'}}></Box>
             <div className = "projects--header">
             <p>Here are some of the projects I've completed or am currently working on!</p>

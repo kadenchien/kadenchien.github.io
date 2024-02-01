@@ -1,17 +1,27 @@
 import React from "react";
 import styles from '../Styles/pages/Home.css';
+import {scroller} from 'react-scroll';
 
 import{
     Box,
     Button,
     Heading,
+    NavLink,
     Link,
     Grid
   } from 'theme-ui';
 
 function Home(){
+  const scrollToSection = (section) => {
+    scroller.scrollTo(section, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
     return(
      <>
+     <div className = "home">
      <div className = "intro--section">
         <Box sx={{alignItems: 'center', textAlign: 'center', justifyContent: 'middle', flexDirection: 'column', flexDirection: 'column', height: '100vh', display: 'flex', pt: '18%'}}>
         <div className = "intro--heading">
@@ -25,10 +35,10 @@ function Home(){
             A freshman at Duke studying CS and Math who is passionate about <br />web development and data science
           </p>
         </div>
-        <button className="button-intro">Projects</button>
+        <NavLink onClick = {() => scrollToSection('projects')}><button className="button-intro">Projects</button></NavLink>
         </Box>
      </div>
-        
+     </div>
      </>
     )
 }

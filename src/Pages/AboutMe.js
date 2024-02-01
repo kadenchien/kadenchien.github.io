@@ -15,7 +15,7 @@ function AboutMe(){
     const skillsData = ['STATA', 'R', 'Pandas', 'NumPy'];
     const skillsDev = ['VSCode', 'GIT', 'GitHub'];
     return(
-        <div className="about--main">
+        <div className="about">
             <div className = "about--title">
                 <Flex sx={{flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                 <h1>About Me</h1>
