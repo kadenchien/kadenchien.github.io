@@ -7,9 +7,10 @@ import Navbar from './Components/Navbar';
 import Sidebar from './Components/Sidebar';
 import Home from './Pages/Homepage';
 import AboutMe from './Pages/AboutMe';
-import Education from './Pages/Education';
 import Projects from './Pages/Projects';
-import Contact from './Pages/Contact';
+import Education from './Pages/Education';
+import Experience from './Pages/Experience';
+import Footer from './Pages/Footer.js';
 
 
 const App = () => {
@@ -24,9 +25,10 @@ const App = () => {
         </div>
         <Home id='home' />
         <AboutMe id='about' />
-        <Education id='education' />
         <Projects id='projects' />
-        <Contact id='contact' />
+        <Education id='education' />
+        <Experience id='experience' />
+        <Footer id='footer' />
       </ThemeUIProvider>
     </div>
   );

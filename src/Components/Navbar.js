@@ -1,17 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import styles from '../Styles/pages/Home.css'
-import { ThemeUIProvider } from "theme-ui"
+import React from 'react';
 import {scroller} from 'react-scroll';
 
 import {
     Box,
     Grid,
-    IconButton,
     Image,
-    Link,
     Flex,
     NavLink,
-    Button
 } from 'theme-ui';
 
 function Navbar(){
@@ -38,9 +33,9 @@ return (
       <Flex as="nav" sx={{alignItems: 'center'}}>
         <NavLink onClick = {() => scrollToSection('home')} sx={{':hover': { cursor: 'pointer' }}}>Home</NavLink>
         <NavLink onClick = {() => scrollToSection('about')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>About</NavLink>
-        <NavLink onClick = {() => scrollToSection('education')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>Education</NavLink>
         <NavLink onClick = {() => scrollToSection('projects')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>Projects</NavLink>
-        <NavLink onClick = {() => scrollToSection('contact')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>Contact</NavLink>
+        <NavLink onClick = {() => scrollToSection('education')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>Education</NavLink>
+        <NavLink onClick = {() => scrollToSection('experience')} sx={{pl: '30px', ':hover': { cursor: 'pointer' }}}>Experience</NavLink>
       </Flex>
       </Grid>
   </div>
