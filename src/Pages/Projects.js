@@ -80,7 +80,7 @@ function projects() {
             title: 'Nike Product Web Mockup',
             description: 'I made a website mockup for a Nike product using HTML and CSS!',
             imageUrl: './img/nike.png',
-            link: 'https://github.com/kadenchien/FileCleaner',
+            link: 'https://github.com/kadenchien/NikeMockWebsite',
             skills: ['HTML', 'CSS', 'JavaScript'],
             button: 'View in GitHub'
         },
