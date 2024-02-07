@@ -32,7 +32,7 @@ function Footer(){
             <Image src="/img/github.png" alt="GitHub" sx={{ width: '30px', height: 'auto' }} />
           </Link>
           <Link href="https://www.linkedin.com/in/kadenchien" target="_blank" rel="noopener noreferrer" sx={{ marginRight: '15px' }}>
-            <Image src="/img/linkedin.png" alt="LinkedIn" sx={{ width: '30px', height: 'auto' }} />
+            <Image src="/img/linkedIn.png" alt="LinkedIn" sx={{ width: '30px', height: 'auto' }} />
           </Link>
           <Link href="https://www.instagram.com/kadenchien" target="_blank" rel="noopener noreferrer" sx={{}}>
             <Image src="/img/instagram.png" alt="LinkedIn" sx={{ width: '30px', height: 'auto' }} />
