@@ -54,7 +54,7 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-camera"></i> <span>Photos</span></a></li>
+        <li><a href="#events" class="nav-link scrollto"><i class="bx bx-headphone"></i> <span>Interests</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -91,7 +91,7 @@
             <img src="assets/img/profile-img.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Student &amp; Web Developer.</h3>
+            <h3>Student &amp; Developer.</h3>
             <p class="fst-italic">
               I'm currently a rising Sophomore at Duke University studying Computer Science and Math, who's passionate about Cloud Computing, Machine Learning, and FinTech!
             </p>
@@ -458,15 +458,78 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Interests</h2>
-          <p>In Progress!</p>
-        </div>
+     <!-- Events Section -->
+     <section id="events" class="events section">
+      <div class="section-title">
+        <h2>Interests</h2>
+        <p>Stuff I think is cool right now!</p>
       </div>
-    </section><!-- End Services Section -->
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/flowerboy.jpg)">
+              <h3>Flower Boy</h3>
+              <p class="description">
+                My favorite artist of all time, recently I've been listening to a lot of Where the Flower Blooms and 911/Mr. Lonely.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/lahai.jpeg)">
+              <h3>Lahai</h3>
+              <p class="description">
+                The best album of 2023 in my opinion. Spirit 2.0, Only, Stereo Colour Cloud, and Suspended are amazing tracks.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/forward.jpeg)">
+              <h3>FORWARD</h3>
+              <p class="description">
+                Amazing summer album, Jordan Ward is probably my new favorite artist. FAMJAM4000 and 311 are my favorites from the project.
+              </p>
+            </div><!-- End Event item -->
+
+            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/salomonmules.jpg)">
+              <h3>Salomon Mules</h3>
+              <p class="description">
+                I really like this collab that Salomon did with MM6, cool mule silhouette with super nice colorways
+              </p>
+            </div><!-- End Event item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
