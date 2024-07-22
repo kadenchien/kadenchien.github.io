@@ -810,6 +810,7 @@ section {
 --------------------------------------------------------------*/
 .events .container-fluid {
   padding: 0;
+  width: 85%
 }
 
 .events .event-item {
