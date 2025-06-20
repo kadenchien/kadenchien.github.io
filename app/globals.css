@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s
+      ease;
+  }
+
+  html {
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Smooth background transitions for layout elements */
+  main {
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Enhanced transitions for sections and containers */
+  section,
+  div[class*="bg-"],
+  header,
+  nav,
+  article,
+  aside,
+  footer {
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Smooth transitions for text elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a {
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Smooth transitions for form elements */
+  input,
+  textarea,
+  button,
+  select {
+    transition: background-color 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  }
+
+  /* Smooth transitions for SVG icons */
+  svg {
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1), fill 0.4s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.4s
+      cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Special handling for gradient backgrounds */
+  [class*="bg-gradient"] {
+    transition: background-image 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.6s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Backdrop blur elements */
+  [class*="backdrop-blur"] {
+    transition: backdrop-filter 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-color 0.6s
+      cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+@layer utilities {
+  .animate-rotate-slow {
+    animation: rotate 20s linear infinite;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    transition: background-image 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .dark .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+
+  .animate-gradient-shift {
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+    transition: background-image 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-text-gradient {
+    background-size: 200% auto;
+    animation: text-gradient 5s ease infinite;
+  }
+
+  @keyframes text-gradient {
+    0% {
+      background-position: 0% center;
+    }
+    50% {
+      background-position: 100% center;
+    }
+    100% {
+      background-position: 0% center;
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  /* Enhanced transition utilities */
+  .transition-theme {
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .transition-colors-smooth {
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .transition-bg-smooth {
+    transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure canvas elements also transition smoothly */
+canvas {
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Special smooth transitions for cards and containers */
+[class*="bg-white"],
+[class*="bg-black"],
+[class*="bg-neutral"],
+[class*="bg-violet"],
+[class*="bg-cyan"] {
+  transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* Smooth transitions for semi-transparent backgrounds */
+[class*="bg-white/"],
+[class*="bg-black/"],
+[class*="bg-neutral/"] {
+  transition: background-color 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
