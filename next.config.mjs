@@ -11,7 +11,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/kadenchien.github.io/' : '',
+  assetPrefix: '',
+  basePath: '',
 }
 
 export default nextConfig
