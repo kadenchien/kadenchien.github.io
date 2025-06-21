@@ -79,10 +79,10 @@ export default function ContactSection() {
                   <div>
                     <h3 className="text-lg font-medium mb-1">Email</h3>
                     <a
-                      href="mailto:hello@example.com"
+                      href="mailto:kaden.chien@gmail.com"
                       className="text-neutral-600 dark:text-neutral-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
                     >
-                      hello@example.com
+                      kaden.chien@gmail.com
                     </a>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium mb-1">Location</h3>
-                    <p className="text-neutral-600 dark:text-neutral-400">San Francisco, CA</p>
+                    <p className="text-neutral-600 dark:text-neutral-400">Potomac, MD</p>
                   </div>
                 </div>
 
@@ -107,7 +107,7 @@ export default function ContactSection() {
                       href="tel:+11234567890"
                       className="text-neutral-600 dark:text-neutral-400 hover:text-violet-600 dark:hover:text-violet-400 transition-colors"
                     >
-                      +1 (123) 456-7890
+                      +1 (301) 310-3544
                     </a>
                   </div>
                 </div>
