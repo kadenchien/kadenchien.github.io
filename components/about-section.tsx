@@ -50,7 +50,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-violet-500 via-purple-500 to-cyan-500 animate-rotate-slow"></div>
               <div className="absolute inset-2 rounded-full bg-white dark:bg-black overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/IMG_8106.jpg?height=400&width=400"
                   alt="Your Name"
                   width={400}
                   height={400}

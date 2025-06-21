@@ -5,25 +5,32 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 const experiences = [
   {
-    title: "Senior Developer",
-    company: "Tech Company",
-    period: "2021 - Present",
+    title: "SDE Intern",
+    company: "Amazon Web Services",
+    period: "Summer 2025",
     description:
-      "Led development of key features for flagship product. Mentored junior developers and implemented best practices across the team.",
+      "Currently working on a redesign of the AWS Organizations console. Specifically, consolidating the management of multiple account types into a single interface.",
   },
   {
-    title: "Frontend Developer",
-    company: "Digital Agency",
-    period: "2018 - 2021",
+    title: "Defense Tech Fellow",
+    company: "Palantir Technologies",
+    period: "Dec 2024 - Jan 2025",
     description:
-      "Built responsive web applications for various clients. Collaborated with designers to implement pixel-perfect interfaces.",
+      "Built a custom AIP workflow to analyze military readiness of soldiers based on anonymized health records. The workflow would determine which soldiers were fit for duty and would suggest allocation of soldiers to battalions based on readiness.",
   },
   {
-    title: "Junior Developer",
-    company: "Startup Inc.",
-    period: "2016 - 2018",
+    title: "ML Research Assistant",
+    company: "Harvard Business School",
+    period: "August 2024 - Dec 2024",
     description:
-      "Developed and maintained company website. Assisted in building the company's first mobile application.",
+      "Worked on an application to automatically parse through 10K forms and extract unusual reports from 100+ companies. Specifically, I worked on improving determinism and reducing token count of the application to reduce cost and improve performance.",
+  },
+  {
+    title: "Cloud Infrastructure Intern",
+    company: "Johns Hopkins University Applied Physics Laboratory",
+    period: "Summer 2024",
+    description:
+      "Developed an internal LLM gateway that allowed employees to access LLMs like OpenAI and Anthropic through a single interface. The application would suggest different models to use based on independent use cases, and was also trained on internal data to be used as a wiki-like tool .",
   },
 ]
 

@@ -8,7 +8,7 @@ const interests = [
   {
     icon: <Music className="w-6 h-6" />,
     title: "Music",
-    description: "Avid listener and occasional player. I enjoy everything from classical to electronic.",
+    description: "Avid listener of various genres, from indie to classical. I also play the cello!",
     color: "from-violet-600 to-purple-600",
   },
   {
@@ -18,28 +18,28 @@ const interests = [
     color: "from-blue-600 to-cyan-600",
   },
   {
-    icon: <Book className="w-6 h-6" />,
-    title: "Reading",
-    description: "Science fiction, philosophy, and technical books expand my horizons.",
-    color: "from-pink-600 to-rose-600",
-  },
-  {
     icon: <Plane className="w-6 h-6" />,
     title: "Travel",
-    description: "Exploring new cultures and places fuels my creativity and perspective.",
+    description: "Visiting new places and experiencing different cultures and cuisines is always exciting, and I'll be studying abroad in Madrid next semester!",
     color: "from-cyan-600 to-teal-600",
   },
   {
     icon: <Coffee className="w-6 h-6" />,
     title: "Coffee",
-    description: "Brewing and tasting different varieties is my morning ritual.",
+    description: "I'm always looking to try different coffee blends and brewing methods.",
     color: "from-amber-600 to-orange-600",
   },
   {
     icon: <Gamepad className="w-6 h-6" />,
-    title: "Gaming",
-    description: "Strategy and indie games help me unwind and think creatively.",
+    title: "Games",
+    description: "Love playing strategy games like TFT as well as single-player RPGs.",
     color: "from-emerald-600 to-green-600",
+  },
+  {
+    icon: <Book className="w-6 h-6" />,
+    title: "Reading",
+    description: "Starting to get back into reading, especially psychology and philosophy books.",
+    color: "from-pink-600 to-rose-600",
   },
 ]
 
