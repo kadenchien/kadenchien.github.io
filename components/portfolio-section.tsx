@@ -20,7 +20,7 @@ const projects = [
     description: "A high-performance order book engine that supports cross-partition trading, built with Kafka and Rust.",
     image: "/orderbook.png?height=600&width=800",
     tags: ["Kafka", "Rust"],
-    github: "https://github.com/kadenchien/crosspartitionorderbook",
+    github: "https://github.com/kadenchien/cross-partition-order-book",
     color: "from-blue-500 to-cyan-500",
   },
   {
