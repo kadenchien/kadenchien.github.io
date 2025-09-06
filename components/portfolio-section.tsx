@@ -9,54 +9,50 @@ const projects = [
   {
     title: "Trackboxd",
     description: "An app I'm currently building that is like letterboxd, but for music.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/trackboxd.png?height=600&width=800",
     tags: ["Next", "Node.js", "Supabase", "Tailwind CSS"],
-    github: "https://github.com/kadenchien/trackboxd",
+    github: "https://github.com/kadenchien/trackboxd_prod",
+    demo: "https://v0-trackboxd-project.vercel.app/",
     color: "from-violet-500 to-purple-500",
   },
   {
     title: "Cross-Partition Order Book Engine",
-    description: "A high-performance order book engine that supports cross-partition trading, built with Kafka and Redis.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Kafka", "Redis"],
+    description: "A high-performance order book engine that supports cross-partition trading, built with Kafka and Rust.",
+    image: "/orderbook.png?height=600&width=800",
+    tags: ["Kafka", "Rust"],
     github: "https://github.com/kadenchien/crosspartitionorderbook",
-    demo: "https://example.com",
     color: "from-blue-500 to-cyan-500",
   },
   {
     title: "UFC Fight Predictor",
     description: "A neural network me and a friend built to predict the outcome of UFC fights based on historical data, with around 80% accuracy.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/UFC.png?height=600&width=800",
     tags: ["Python", "TensorFlow"],
     github: "https://github.com/kadenchien/UFC-Prediction-NN",
-    demo: "https://example.com",
     color: "from-pink-500 to-rose-500",
   },
   {
     title: "Mini-Amazon",
     description: "A full-stack e-commerce application with user authentication, product management, and other features like coupon codes and reviews.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/amazon.png?height=600&width=800",
     tags: ["Flask", "PostgreSQL"],
     github: "https://github.com",
-    demo: "https://example.com",
     color: "from-amber-500 to-orange-500",
   },
   {
     title: "Duke Stats API",
     description: "A web scraper that collects statistics for Duke University sports teams, then ports that data to a public API.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/dukebb.png?height=600&width=800",
     tags: ["BeautifulSoup", "Requests", "Postman"],
     github: "https://github.com/kadenchien/DukeStatsAPI",
-    demo: "https://example.com",
     color: "from-emerald-500 to-green-500",
   },
   {
     title: "Covid Death Conditions",
     description: "A neural network that detects patients that are at risk of dying from COVID-19 based on their health records.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/covid.png?height=600&width=800",
     tags: ["Python", "TensorFlow", "Pandas"],
     github: "https://github.com/kadenchien/Covid-Death-Conditions",
-    demo: "https://example.com",
     color: "from-emerald-500 to-green-500",
   },
 ]
@@ -122,15 +118,17 @@ export default function PortfolioSection() {
                   >
                     <Github className="w-5 h-5" />
                   </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-neutral-200 transition-colors"
-                    aria-label="View live demo"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black hover:bg-neutral-200 transition-colors"
+                      aria-label="View live demo"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
 

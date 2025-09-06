@@ -6,6 +6,12 @@ import { Code, Palette, Database, Globe, Cpu, LineChart } from "lucide-react"
 
 const skills = [
   {
+    icon: <Palette className="w-6 h-6" />,
+    title: "Programming Languages",
+    description: "Java, TypeScript, Python, C, SQL, MIPS Assembly",
+    color: "from-pink-500 to-rose-500",
+  },
+  {
     icon: <Code className="w-6 h-6" />,
     title: "Frontend Development",
     description: "React, Next.js, TypeScript, HTML/CSS",
@@ -14,32 +20,26 @@ const skills = [
   {
     icon: <Database className="w-6 h-6" />,
     title: "Backend Development",
-    description: "Node.js, Java, C, Python",
+    description: "Node.js, Flask, Spring Boot, REST APIs",
     color: "from-blue-500 to-cyan-500",
   },
   {
     icon: <Cpu className="w-6 h-6" />,
-    title: "DevOps",
-    description: "Docker, CI/CD, AWS, Vercel",
+    title: "Cloud & Infrastucture",
+    description: "AWS, Docker, Kafka, CI/CD, Vercel",
     color: "from-amber-500 to-orange-500",
-  },
-  {
-    icon: <Palette className="w-6 h-6" />,
-    title: "UI/UX Design",
-    description: "Figma, Adobe XD, Responsive Design",
-    color: "from-pink-500 to-rose-500",
-  },
-  {
-    icon: <Globe className="w-6 h-6" />,
-    title: "Web Technologies",
-    description: "REST APIs, GraphQL, WebSockets",
-    color: "from-cyan-500 to-teal-500",
   },
   {
     icon: <LineChart className="w-6 h-6" />,
     title: "Database Management",
-    description: "Postgres, SQL, MongoDB",
+    description: "PostgreSQL, DynamoDB, MongoDB",
     color: "from-emerald-500 to-green-500",
+  },
+  {
+    icon: <Globe className="w-6 h-6" />,
+    title: "Tools & Other",
+    description: "Git, Bash, TensorFlow, Postman, Figma",
+    color: "from-cyan-500 to-teal-500",
   },
 ]
 
